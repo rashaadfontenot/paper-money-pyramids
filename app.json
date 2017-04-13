@@ -1,30 +1,8 @@
 {
-  "name": "paper-money-pyramids",
-  "description": "adding app.json",
-  "scripts": {
-  },
-  "env": {
-    "LIBRATO_PASSWORD": {
-      "required": true
-    },
-    "LIBRATO_TOKEN": {
-      "required": true
-    },
-    "LIBRATO_USER": {
-      "required": true
-    },
-    "PAPERTRAIL_API_TOKEN": {
-      "required": true
-    }
-  },
-  "formation": {
-  },
-  "addons": [
-    "librato",
-    "papertrail",
-    "heroku-postgresql"
-  ],
-  "buildpacks": [
-
-  ]
+  "name": "Start on Heroku: Ruby",
+  "description": "A barebones Rails app, which can easily be deployed to Heroku",
+  "image": "heroku/ruby",
+  "repository": "https://github.com/heroku/ruby-getting-started",
+  "keywords": ["ruby", "rails" ],
+  "addons": [ "heroku-postgresql" ]
 }
