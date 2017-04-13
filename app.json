@@ -1,0 +1,30 @@
+{
+  "name": "paper-money-pyramids",
+  "description": "adding app.json",
+  "scripts": {
+  },
+  "env": {
+    "LIBRATO_PASSWORD": {
+      "required": true
+    },
+    "LIBRATO_TOKEN": {
+      "required": true
+    },
+    "LIBRATO_USER": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "librato",
+    "papertrail",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}
