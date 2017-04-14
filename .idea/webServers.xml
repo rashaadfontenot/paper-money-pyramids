@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4162ae3b-5b00-4b46-8f55-0515793fa1b2" name="postgres" url="http://0.0.0.0:5000">
+        <fileTransfer port="0" mountedRoot="$PROJECT_DIR$/../../Server" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
