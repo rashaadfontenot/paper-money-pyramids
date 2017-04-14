@@ -1,9 +1,7 @@
-URL = 'http://www.nba.com/players'
-
 require 'nokogiri'
 require 'open-uri'
+require 'HTTParty'
 
-Nokogiri::HTML(open(URL)).xpath("//img/@src").each do |src|
-  uri = URI.join( URL, src ).to_s # make absolute uri
-  File.open(File.basename(uri),'wb'){ |f| f.write(open(uri).read) }
+class NBAscraper
+  doc = HTTParty.get("http://www.nba.com/players")
 end
