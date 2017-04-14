@@ -1,7 +1,11 @@
 require 'nokogiri'
 require 'open-uri'
 require 'HTTParty'
+require 'json'
 
-class NBAscraper
-  doc = HTTParty.get("http://www.nba.com/players")
-end
+url = 'http://www.nba.com/players'
+html = open(url)
+
+doc = Nokogiri::HTML(open('http://www.nba.com/players'))
+doc.xpath("//a ")
+puts doc
