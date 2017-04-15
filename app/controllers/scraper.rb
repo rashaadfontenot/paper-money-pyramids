@@ -1,13 +1,9 @@
-
-require 'nokogiri'
 require 'open-uri'
+require 'nokogiri'
 
-url = 'http://www.nba.com/players'
-html = open(url)
+file = File.open('app/assets/nbaplayer.html')
+html = Nokogiri::HTML(file)
 
-doc = Nokogiri::HTML(html)
-
-names = doc.css('a').first.attr('title')
-
+names = html.xpath('//a/@title')
 
 puts names
